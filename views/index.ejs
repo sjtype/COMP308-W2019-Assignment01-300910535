@@ -1,121 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= title %></title>
-    <!-- CSS Section -->
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="Content/app.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">
-        <img src="../Assets/Images/logo.png" style="width:10%; height:10%;"> Semy's Express Portfolio
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<%/*
+    File name: COMP308-W2019-Assignment01
+    Author's name: Semy Jin
+    Student ID: 300910535
+    Web app name: Express Portfolio
+    Github repository link: 
+    Heroku link: 
+  */%>
+  
+<% include ./partials/header.ejs %>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <% if(title == "Home") { %>
-          <li class="nav-item active">
-            <% } else { %>}
-          </li>
+<div class="container text-center" style="padding: 5%">
+  <div class="jumbotron">
+    <h1 class="display-4">Semy's Express Portfolio</h1>
+    <hr class="my-4">
+    <p class="lead">
+      <h3>
+        Welcome to my Portfolio. Please feel free to explore!
+      </h3>
+      <br />
+      <h5>
+        Learning never stops, whether it be from my mistakes or successes. 
+        <br />
+        It is also something that is best experienced with others, which is why it should always be shared.
+      </h5>
+      <br />    
+      <button class="btn btn-dark btn-lg" href="/about"><i class="fa fa-lg fa-cloud"></i> About Me</button>
+    </p>
+  </div>
+</div>
 
-          <li class="nav-item">
-            <% } %>
-            <a class="nav-link" href="/"
-              ><i class="fa fa-lg fa-hotel"></i> Home
-              <span class="sr-only">(current)</span></a
-            >
-          </li>
-
-          <% if(title == "About") { %>
-          <li class="nav-item active">
-            <% } else { %>}
-          </li>
-
-          <li class="nav-item">
-            <% } %>
-            <a class="nav-link" href="/about"
-              ><i class="fa fa-lg fa-cloud"></i> About</a
-            >
-          </li>
-
-          <% if(title == "Products") { %>
-          <li class="nav-item active">
-            <% } else { %>}
-          </li>
-
-          <li class="nav-item">
-            <% } %>
-            <a class="nav-link" href="/products"
-              ><i class="fa fa-lg fa-umbrella"></i> Products</a
-            >
-          </li>
-
-          <% if(title == "Services") { %>
-          <li class="nav-item active">
-            <% } else { %>}
-          </li>
-
-          <li class="nav-item">
-            <% } %>
-            <a class="nav-link" href="/services"
-              ><i class="fa fa-lg fa-key"></i> Services</a
-            >
-          </li>
-
-          <% if(title == "Contact") { %>
-          <li class="nav-item active">
-            <% } else { %>}
-          </li>
-
-          <li class="nav-item">
-            <% } %>
-            <a class="nav-link" href="/contact"
-              ><i class="fa fa-lg fa-headphones"></i> Contact</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %></h1>
-        <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
-        </p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button"
-            >Learn more</a
-          >
-        </p>
-      </div>
-    </div>
-
-    <!-- JavaScript Section -->
-    <script src="jquery/dist/jquery.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="Scripts/app.js"></script>
-  </body>
-</html>
+<% include ./partials/footer.ejs %>
