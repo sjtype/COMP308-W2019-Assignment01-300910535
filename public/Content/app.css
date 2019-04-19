@@ -7,7 +7,23 @@
     Heroku link: 
   */
 
-.stars{
+#link-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+div.polaroid {
+  float: right;
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #AFB2BC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.stars {
     background-color:black;
     background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
