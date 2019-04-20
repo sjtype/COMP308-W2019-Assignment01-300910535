@@ -10,9 +10,13 @@
 // confirm that message was sent
 function confirmMessage(){
     var firstName = document.getElementById("txtFirstName").value;
-    //var lastName = document.getElementById("txtLastName").value;
-    //var email = document.getElementById("txtEmail").value;
-    //var message = document.getElementById("txtMessage").value;
+    var lastName = document.getElementById("txtLastName").value;
+    var email = document.getElementById("txtEmail").value;
+    var message = document.getElementById("txtMessage").value;
+    if(firstName == "" || lastName == "" || email == "" || message == "") {
 
-    alert(firstName + ", your message has been sent.");
+    }
+    else {
+      alert(firstName + ", your message has been sent.");
+    }
 }
