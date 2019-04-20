@@ -1,10 +1,10 @@
-<%/* 
-    File name: COMP308-W2019-Assignment01 
-    Author's name: Semy Jin 
-    Student ID: 300910535 
-    Web app name: Express Portfolio 
-    Github repository link: 
-    Heroku link:
+<%/*
+    File name: COMP308-W2019-Assignment01
+    Author's name: Semy Jin
+    Student ID: 300910535
+    Web app name: Express Portfolio
+    Github repository link: https://github.com/sjtype/COMP308-W2019-Assignment01-300910535
+    Heroku link: https://comp308-w2019-a1-300910535.herokuapp.com/
   */%> 
   
 <% include ./partials/header.ejs %>
@@ -20,7 +20,7 @@
       <br />
       <form id="contactForm" name="contactForm">
       <table class="table table-bordered table-striped table-hover text-left">
-        <!-- Name -->
+        <!-- name -->
         <tr>
           <td>
             <label for="txtFirstName">First name: </label>
@@ -41,6 +41,7 @@
               required>
           </td>
         </tr>
+        <!-- email -->
         <tr>
           <td colspan="2">
             <label for="txtEmail">Email: </label>
@@ -52,6 +53,7 @@
               required>
           </td>
         </tr>
+        <!-- message -->
         <tr>
           <td colspan="2">
             <label for="txtMessage">Message: </label>
@@ -64,6 +66,7 @@
           </td>
         </tr>
       </table>
+      <!-- submit button -->
       <button class="btn btn-dark btn-lg" onclick="confirmMessage()">
         <i class="fa fa-lg fa-check-square"></i> Submit
       </button>
