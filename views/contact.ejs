@@ -1,11 +1,11 @@
-<%/*
-    File name: COMP308-W2019-Assignment01
-    Author's name: Semy Jin
-    Student ID: 300910535
-    Web app name: Express Portfolio
+<%/* 
+    File name: COMP308-W2019-Assignment01 
+    Author's name: Semy Jin 
+    Student ID: 300910535 
+    Web app name: Express Portfolio 
     Github repository link: 
-    Heroku link: 
-  */%>
+    Heroku link:
+  */%> 
   
 <% include ./partials/header.ejs %>
 
@@ -13,20 +13,62 @@
   <div class="container text-center" style="padding: 5%">
     <div class="jumbotron">
       <h1 class="display-4"><%= title %></h1>
-      <hr class="my-4">
-      <p class="lead">
-        <h3>
-          Contact Me
-        </h3>
-        <br />
-        <h5>
-          Learning never stops, whether it be from my mistakes or successes. 
-          <br />
-          It is also something that is best experienced with others, which is why it should always be shared.
-        </h5>
-        <br />    
-        <button class="btn btn-dark btn-lg" href="/about"><i class="fa fa-lg fa-cloud"></i> About Me</button>
-      </p>
+      <hr class="my-4" />
+      <h3>
+        Contact Me
+      </h3>
+      <br />
+      <form id="contactForm" name="contactForm">
+      <table class="table table-bordered table-striped table-hover text-left">
+        <!-- Name -->
+        <tr>
+          <td>
+            <label for="txtFirstName">First name: </label>
+            <input id="txtFirstName" 
+              name="txtFirstName" 
+              type="text" 
+              class="form-control"
+              placeholder="First name" 
+              required>
+          </td>
+          <td>
+            <label for="txtLastName">Last name: </label>
+            <input id="txtLastName" 
+              name="txtLastName" 
+              type="text" 
+              class="form-control"
+              placeholder="Last name"
+              required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="txtEmail">Email: </label>
+            <input id="txtEmail" 
+              name="txtEmail" 
+              type="email" 
+              class="form-control" 
+              placeholder="Email"
+              required>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="txtMessage">Message: </label>
+            <input id="txtMessage" 
+              name="txtMessage" 
+              type="text" 
+              class="form-control" 
+              placeholder="Write your message here!"
+              required>
+          </td>
+        </tr>
+      </table>
+      <button class="btn btn-dark btn-lg" href="/about">
+        <i class="fa fa-lg fa-check-square"></i> Submit
+      </button>
+      </form> 
+      <br />
     </div>
   </div>
 </div>
